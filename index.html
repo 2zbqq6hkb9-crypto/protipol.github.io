@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROTI–PÓL / VLAJKA V KORUNĚ — komunikační anotace</title>
+  <meta name="description" content="Soukromé, civilní gesto solidarity s palestinskými civilisty. Rozšířená komunikační anotace k projektu PROTI–PÓL / VLAJKA V KORUNĚ.">
+  <meta property="og:title" content="PROTI–PÓL / VLAJKA V KORUNĚ">
+  <meta property="og:description" content="Soukromé, civilní gesto solidarity s palestinskými civilisty. Rozšířená komunikační anotace.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #5a5a5a;
+      --card: #f6f6f6;
+      --accent: #2b6cb0; /* decentní modrá */
+      --accent-weak: #e6eef8;
+      --border: #e5e5e5;
+      --shadow: 0 8px 30px rgba(0,0,0,.06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --text: #e7e7ea;
+        --muted: #a4a9b3;
+        --card: #171a21;
+        --accent: #7aa2ff;
+        --accent-weak: #1e2a40;
+        --border: #2a2f3a;
+        --shadow: 0 10px 30px rgba(0,0,0,.35);
+      }
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+    }
+    header.nav {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(8px);
+      background: color-mix(in lab, var(--bg), transparent 12%);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 78rem; margin: 0 auto; padding: .8rem 1rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand { font-weight: 800; letter-spacing: .02em; }
+    .brand a { color: var(--text); text-decoration: none; }
+    nav a {
+      color: var(--muted); text-decoration: none; margin-left: 1rem; font-weight: 600;
+    }
+    nav a:hover { color: var(--text); }
+    .wrap {
+      max-width: 72ch; margin: 0 auto; padding: 2.5rem 1rem 5rem;
+    }
+    .hero {
+      margin-top: 1.5rem; margin-bottom: 1.5rem;
+      padding: 1.25rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(180deg, var(--card), transparent);
+      box-shadow: var(--shadow);
+    }
+    h1, h2, h3 { font-family: Merriweather, Georgia, "Times New Roman", serif; line-height: 1.25; }
+    h1 { font-size: clamp(2rem, 3.6vw, 3rem); margin: .5rem 0 0; }
+    .lead { font-size: clamp(1.05rem, 1.2vw, 1.25rem); color: var(--muted); margin-top: .5rem; }
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-weak);
+      padding: .9rem 1rem;
+      border-radius: 12px;
+      margin: 1rem 0 1.75rem;
+    }
+    section { margin: 2.5rem 0; }
+    section h2 { margin-top: 0; font-size: clamp(1.5rem, 2vw, 2rem); }
+    p { margin: .6rem 0 1rem; }
+    ul { padding-left: 1.1rem; }
+    li { margin: .4rem 0; }
+    blockquote {
+      margin: 1rem 0; padding: .75rem 1rem;
+      border-left: 4px solid var(--border);
+      background: color-mix(in lab, var(--card), var(--bg) 25%);
+      border-radius: 12px;
+      font-style: italic;
+    }
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .tiny { font-size: .9rem; color: var(--muted); }
+    .pill {
+      display: inline-block; padding: .18rem .6rem; border: 1px solid var(--border);
+      border-radius: 999px; font-size: .85rem; color: var(--muted);
+    }
+    .btn {
+      display: inline-block;
+      padding: .6rem .9rem; border-radius: 10px; border: 1px solid var(--border);
+      text-decoration: none; color: var(--text); font-weight: 600;
+    }
+    .btn:hover { border-color: var(--text); }
+    @media print {
+      header.nav, .btns { display: none !important; }
+      .wrap { max-width: none; padding: 0; }
+      .hero { box-shadow: none; }
+      a { color: black; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand"><a href="#">PROTI–PÓL</a></div>
+      <nav>
+        <a href="#o-cem-to-je">O čem to je</a>
+        <a href="#proc-to-delame">Proč to děláme</a>
+        <a href="#co-vidite">Co vidíte</a>
+        <a href="#co-to-je">Co to je / není</a>
+        <a href="#jak-cist">Jak číst opozici</a>
+        <a href="#ucast">K účasti</a>
+        <a href="#etika">Etika</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <span class="pill">komunikační anotace</span>
+      <h1>PROTI–PÓL / VLAJKA V KORUNĚ</h1>
+      <p class="lead">Soukromé, civilní gesto solidarity s&nbsp;palestinskými civilisty. Text pro web / QR kód / tisk.</p>
+      <div class="btns" style="margin-top:.6rem">
+        <a class="btn" href="#kratke-sdeleni">Krátké sdělení</a>
+        <a class="btn" href="#zaverem">Závěrem</a>
+      </div>
+    </div>
+
+    <section id="o-cem-to-je">
+      <h2>O čem to je</h2>
+      <p>Toto je soukromé, civilní gesto solidarity s palestinskými civilisty. Vzniklo z přesvědčení, že vedle hlasu státu musí být vidět i hlas lidí — tichý, vytrvalý a zodpovědný. Vlajka vyvěšená vysoko naproti státní instituci nepolemizuje s právem kohokoli na bezpečí; připomíná ale, že bezpečí a důstojnost nejsou výsadou jedné strany. Je to projev empatie tváří v tvář dlouhodobé nerovnováze moci a lidským ztrátám, které se v oficiálních narativech často rozplývají.</p>
+    </section>
+
+    <section id="proc-to-delame">
+      <h2>Proč to děláme</h2>
+      <p>Žijeme v prostředí, kde státem řízená a symbolicky okázalá podpora jedné strany konfliktu bývá prezentována jako normativní rámec — jako by to byl i hlas všech občanů. Není. Existuje reálná skupina lidí, která s takto jednostranným rámováním nesouhlasí; nese hluboký smutek nad civilními oběťmi a zároveň hluboký nesouhlas s tím, jak se zamlčuje nerovnost moci, historické vrstvy bezpráví i současné porušování práv. Tato instalace říká prostě: <strong>jsme tady a nesouhlasíme</strong>, bez křiku, bez stranické kampaně, bez násilí.</p>
+    </section>
+
+    <section id="co-vidite">
+      <h2>Co vidíte a proč</h2>
+      <p>Vlajka Palestiny je umístěna vysoko — ne jako triumf, ale jako <em>signál vytrvalosti</em>. Proti opevněné, střežené a státní symbolikou obklopené instituci stojí viditelné, ale ne‑agresivní občanské gesto. <strong>Opozice je záměrná:</strong></p>
+      <ul>
+        <li><strong>Hlas státu</strong> (protokol, ploty, zbraně) ↔ <strong>hlas lidí</strong> (ticho, stálost, viditelnost).</li>
+        <li><strong>Oficiální narativ</strong> ↔ <strong>pluralita občanských postojů</strong>.</li>
+        <li><strong>Monopol na symboly</strong> ↔ <strong>otevřený prostor pro empatii a otázky</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="co-to-je">
+      <h2>Co to je — a co to není</h2>
+      <ul>
+        <li>Je to <strong>soukromé vyjádření</strong> solidarity s civilisty a požadavek na univerzální uplatňování lidských práv a humanitárního práva.</li>
+        <li><strong>Není</strong> to podpora násilí, kolektivní viny ani delegitimizace bezpečnosti kohokoli.</li>
+        <li><strong>Není</strong> to státní postoj ani stranická kampaň.</li>
+        <li><strong>Není</strong> to výzva k porušování práva, k narušování veřejného pořádku či k fyzické konfrontaci.</li>
+      </ul>
+    </section>
+
+    <section id="jak-cist">
+      <h2>Jak číst tuto opozici</h2>
+      <p>Stát má prostředky moci — ozbrojené složky, protokol, oficiální projevy. Občané mají prostředky péče — slovo, symbol, vytrvalost. Když se jeden hlas stává všudypřítomným, druhý se musí zviditelnit prostě tím, že <strong>trvá</strong>. Vlajka v koruně není estetická náhoda; je to volba, která říká, že solidarita se může dít mimo státní rámce, bez nároku na monopol nad „správným“ výkladem. <strong>Neprosíme o prostor — bereme si svůj díl odpovědnosti.</strong></p>
+    </section>
+
+    <section id="ucast">
+      <h2>K anonymní účasti</h2>
+      <p>U paty stromu je krátký text a prostor pro jeden tichý úkon: minuta ticha, krátká poznámka, stužka. Nejde o shromáždění, ale o <strong>trvalou možnost</strong> projevit soucit a nesouhlas bez rituálů moci.</p>
+    </section>
+
+    <section id="etika">
+      <h2>Etický rámec</h2>
+      <p>Dbáme na zákonnost, respekt k sousedům a bezpečí. Instalace stojí na soukromém pozemku a ničemu nepřekáží. Chceme připomínat, že <strong>občanský projev může být pevný a přitom ohleduplný</strong>.</p>
+    </section>
+
+    <section id="kratke-sdeleni">
+      <h2>Krátké sdělení pro kolemjdoucí (verze na destičku)</h2>
+      <blockquote>
+        <p><strong>Toto je soukromé občanské vyjádření solidarity s palestinskými civilisty.</strong><br>
+        Nejde o hlas státu. Jde o hlas lidí, kteří trvají na důstojnosti, právu na život a rovnosti měřítek.<br>
+        <em>This is a private, civic expression of solidarity with Palestinian civilians. Not a state voice.</em></p>
+      </blockquote>
+    </section>
+
+    <section id="zaverem">
+      <h2>Závěrem</h2>
+      <p>„Proti–pól“ není o tom, kdo má hlasitější amplion. Je o tom, že <strong>hlas lidí existuje i tam, kde se ho instituce snaží nahradit svým vlastním</strong>. A že smutek nad ztrátami i nesouhlas s nerovností moci lze vyjádřit beze zbraní — viditelně, trpělivě a s respektem.</p>
+    </section>
+
+    <footer>
+      <p class="tiny">© <span id="year"></span> PROTI–PÓL. Tento web je jen informační: žádné cookies, žádné sledování. Hostování kdekoliv jako statický HTML soubor.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
